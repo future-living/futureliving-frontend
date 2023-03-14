@@ -2,11 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.boxed-section {
-  @apply mx-auto max-w-[1440px] px-[20px] sm:px-[36px] md:px-[72px] lg:px-[108px] xl:px-[136px];
-}
-
-.full-section {
-  @apply mx-auto max-w-[1440px];
-}
