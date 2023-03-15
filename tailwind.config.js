@@ -15,6 +15,9 @@ module.exports = {
       },
       colors: {
         title: "#4D265A",
+        link: "#F0F1F3",
+        placeholder: "#667085",
+        icon: "#71517B",
       },
     },
   },
