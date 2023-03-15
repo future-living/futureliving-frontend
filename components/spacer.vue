@@ -1,4 +1,4 @@
 <template>
-    <div class="h-0 md:h-10 lg:h-20">
+    <div class="h-10 md:h-20 lg:h-[120px]">
     </div>
 </template>

@@ -18,6 +18,7 @@ module.exports = {
         link: "#F0F1F3",
         placeholder: "#667085",
         icon: "#71517B",
+        bodyText: "#3D4350",
       },
     },
   },
