@@ -61,6 +61,9 @@
         <div>
           <img src="~/assets/img/logo/gift.svg" alt="" class="h-[18px] md:h-[40px]" />
 				</div>
+				<div class="font-montserrat text-[10px] font-bold text-title md:text-base">
+					Loyal
+				</div>
 			</div>
 		</div>
     <div class="flex flex-col items-center justify-center gap-4 md:gap-7 lg:items-start lg:gap-10 columns-6">
