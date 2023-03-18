@@ -19,6 +19,7 @@ module.exports = {
         placeholder: "#667085",
         icon: "#71517B",
         bodyText: "#3D4350",
+        card: "#E2C5EB",
       },
     },
   },
