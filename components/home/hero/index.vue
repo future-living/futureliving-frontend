@@ -45,7 +45,7 @@
                 Find The Place To Live Your Dreams Easily Here
             </div>
             <div
-                class="font-montserrat font-light md:font-reguler text-xs md:text-lg text-bodyText text-center lg:text-left leading-6 md:leading-[30px] lg:max-w-[568px]">
+                class="font-montserrat font-normal text-xs md:text-lg text-bodyText text-center lg:text-left leading-6 md:leading-[30px] lg:max-w-[568px]">
                 Semua yang Anda butuhkan tentang hunian impian ada di sini. Future Living menyediakan hunian terbaik untuk
                 Anda dan keluarga. Pengalaman kami membawa Anda pada kepuasan. </div>
             <div class="flex flex-row gap-2 md:gap-4">
