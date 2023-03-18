@@ -53,18 +53,18 @@ const listItem = (id) => {
 <template>
     <div class="flex flex-col py-16 lg:py-0 gap-10">
         <div
-            class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px] lg:mb-[30px]">
+            class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
             Properti Kami
         </div>
         <div ref="slidesContainer"
-            class="flex flex-row lg:flex-col lg:gap-20 overflow-hidden snap-mandatory snap-x  no-scrollbar z-10">
+            class="flex flex-row lg:flex-col lg:gap-20 overflow-hidden snap-mandatory snap-x no-scrollbar lg:py-8">
             <div ref="slide" v-for="properti in properties" :key="properti.id" :class="[listItem(properti.id), posisi]"
                 class="flex flex-col lg:items-center gap-10 md:gap-[60px] min-w-full snap-always snap-center">
                 <div class="relative flex flex-col gap-7 lg:gap-10 lg:min-w-[47.5%]">
                     <img :src="`${properti.img}`" alt=""
                         class="object-cover rounded w-full h-[208px] md:h-[524px] lg:max-h-[452px]">
-                    <div class="absolute flex flex-row justify-center gap-2 w-full -bottom-[16px] md:-bottom-[28px]">
-                        <HomeRecomendationImagebutton title="Play Video">
+                    <div class="absolute flex flex-row justify-center gap-2 w-full -bottom-[16px] md:-bottom-[28px] z-10">
+                        <HomePropertyImagebutton title="Play Video">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6 stroke-title">
@@ -75,8 +75,8 @@ const listItem = (id) => {
                                 </svg>
 
                             </div>
-                        </HomeRecomendationImagebutton>
-                        <HomeRecomendationImagebutton title="360 Tour">
+                        </HomePropertyImagebutton>
+                        <HomePropertyImagebutton title="360 Tour">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6 stroke-title">
@@ -84,7 +84,7 @@ const listItem = (id) => {
                                         d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                                 </svg>
                             </div>
-                        </HomeRecomendationImagebutton>
+                        </HomePropertyImagebutton>
                     </div>
                 </div>
                 <div class="flex flex-col gap-7 lg:gap-10">
@@ -108,26 +108,26 @@ const listItem = (id) => {
                             Fasilitas Umum
                         </div>
                         <div class="flex flex-row justify-center lg:justify-start gap-4 md:gap-8">
-                            <HomeRecomendationFacility title="Masjid">
+                            <HomePropertyFacility title="Masjid">
                                 <img src="~/assets/img/mosque.png" alt="mosque">
-                            </HomeRecomendationFacility>
-                            <HomeRecomendationFacility title="Kolam Renang">
+                            </HomePropertyFacility>
+                            <HomePropertyFacility title="Kolam Renang">
                                 <img src="~/assets/img/pool.png" alt="pool">
-                            </HomeRecomendationFacility>
-                            <HomeRecomendationFacility title="Alarm Kebakaran">
+                            </HomePropertyFacility>
+                            <HomePropertyFacility title="Alarm Kebakaran">
                                 <img src="~/assets/img/alarm.png" alt="alarm">
-                            </HomeRecomendationFacility>
+                            </HomePropertyFacility>
                         </div>
                         <div class="flex flex-row justify-center lg:justify-start gap-4 md:gap-8">
-                            <HomeRecomendationFacility title="Keamanan">
+                            <HomePropertyFacility title="Keamanan">
                                 <img src="~/assets/img/shield.png" alt="shield">
-                            </HomeRecomendationFacility>
-                            <HomeRecomendationFacility title="Taman Bermain">
+                            </HomePropertyFacility>
+                            <HomePropertyFacility title="Taman Bermain">
                                 <img src="~/assets/img/play.png" alt="play">
-                            </HomeRecomendationFacility>
-                            <HomeRecomendationFacility title="Gym">
+                            </HomePropertyFacility>
+                            <HomePropertyFacility title="Gym">
                                 <img src="~/assets/img/barbel.png" alt="barbel">
-                            </HomeRecomendationFacility>
+                            </HomePropertyFacility>
                         </div>
                     </div>
                     <div class="flex flex-row gap-2 justify-center lg:justify-start md:gap-4">
