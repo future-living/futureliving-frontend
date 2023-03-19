@@ -6,7 +6,7 @@ defineProps({
 })
 </script>
 <template>
-    <div class="snap-always snap-center min-w-full  bg-[#F3F1F4]">
+    <div class="rounded-lg  bg-[#F3F1F4] ">
         <div class="flex flex-col mt-8 ml-8 gap-6 md:gap-16 ">
             <div class="flex flex-col gap-1">
                 <div
