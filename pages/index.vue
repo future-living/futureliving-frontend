@@ -20,4 +20,8 @@
         <HomePortofolio />
     </div>
     <Spacer />
+    <div class="testimony-section-container">
+        <HomeTestimonial />
+    </div>
+    <Spacer />
 </template>

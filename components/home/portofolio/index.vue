@@ -70,16 +70,16 @@ const properties = [
         <div class="flex flex-row gap-4 justify-center items-center">
             <div class="w-5 h-5">
                 <svg v-if="current !== 0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                    class="w-5 h-5 stroke-[#AD9BB3]" @click="slider.prev()">
+                    class="w-5 h-5 stroke-[#AD9BB3] fill-[#AD9BB3]" @click="slider.prev()">
                     <path fill-rule="evenodd"
                         d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
                         clip-rule="evenodd" />
                 </svg>
             </div>
             <!-- <div v-for="properti in properties" :key="properti.id">
-                                                                                <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
-                                                                                <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
-                                                                            </div> -->
+                                                                                    <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
+                                                                                    <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
+                                                                                </div> -->
 
             <div v-if="slider" class="dots">
                 <button v-for="(_slide, idx) in dotHelper" @click="slider.moveToIdx(idx)"
@@ -87,7 +87,7 @@ const properties = [
             </div>
             <div class="w-5 h-5">
                 <svg v-if="current < dotHelper.length - 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                    fill="currentColor" class="w-5 h-5 stroke-[#AD9BB3]" @click="slider.next()">
+                    fill="currentColor" class="w-5 h-5 stroke-[#AD9BB3] fill-[#AD9BB3]" @click="slider.next()">
                     <path fill-rule="evenodd"
                         d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
                         clip-rule="evenodd" />

@@ -13,7 +13,7 @@ defineProps({
                     class="font-montserrat font-bold md:font-semibold text-base md:text-2xl text-bodyText leading-[20px] md:leading-[29px]">
                     {{ nama }}
                 </div>
-                <div class="flex flex-row gap-1">
+                <div class="flex flex-row gap-1 items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-5 h-5">
@@ -24,8 +24,7 @@ defineProps({
 
                     </div>
                     <div>
-                        <div
-                            class="font-montserrat font-normal text-[10px] md:text-sm text-bodyText leading-[24px] md:leading-[26px]">
+                        <div class="font-montserrat font-normal text-[10px] md:text-sm text-bodyText">
                             {{ kota }}
                         </div>
                     </div>
