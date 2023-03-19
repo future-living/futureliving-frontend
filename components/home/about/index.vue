@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col lg:flex-row lg:gap-[68px]">
-        <div class="flex flex-row py-[68px] md:px-[52px] lg:px-0  gap-3 md:gap-6 lg:w-full">
+        <div class="flex flex-row py-[68px] lg:py-[40px] md:px-[52px] lg:px-0  gap-3 md:gap-6 lg:w-full">
             <div class="flex flex-col gap-3 md:gap-6 w-full">
                 <div class="relative w-full">
                     <img class="object-cover w-full h-[165px] md:h-[280px] rounded-lg saturate-150"
@@ -42,7 +42,7 @@
                 Tentang Kami
             </div>
             <div
-                class="font-montserrat font-light md:font-reguler text-xs md:text-lg text-bodyText text-center lg:text-left leading-6 md:leading-[30px]">
+                class="font-montserrat font-normal text-xs md:text-lg text-bodyText text-center lg:text-left leading-6 md:leading-[30px]">
                 Berpengalaman lebih dari 10 tahun sebagai pengembang yang menyediakan rumah menciptakan rumah yang
                 fungsional, nyaman, dan bergaya dengan menggunakan bahan berkualitas tinggi dan teknologi canggih.
                 Transparansi dan kejujuran adalah nilai-nilai Future Living.</div>

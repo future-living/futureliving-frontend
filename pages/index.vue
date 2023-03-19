@@ -1,11 +1,27 @@
 <template>
+    <Spacer />
     <div class="base-section-container">
-        <Spacer />
         <HomeHero />
-        <Spacer />
-        <HomeAbout />
-        <Spacer />
-
-        <!-- <div class="w-full h-10 bg-yellow-400"></div> -->
     </div>
+    <Spacer />
+    <div class="base-section-container">
+        <HomeAbout />
+    </div>
+    <Spacer />
+    <div class="base-section-container">
+        <HomeProperty />
+    </div>
+    <Spacer />
+    <div class="base-section-container">
+        <HomeService />
+    </div>
+    <Spacer />
+    <div class="project-section-container">
+        <HomePortofolio />
+    </div>
+    <Spacer />
+    <div class="testimony-section-container">
+        <HomeTestimonial />
+    </div>
+    <Spacer />
 </template>
