@@ -1,6 +1,5 @@
 <template>
-    <Spacer />
-    <div class="base-section-container">
+    <div class="base-section-container pt-4 md:pt-8 lg:pt-16">
         <HomeHero />
     </div>
     <Spacer />
@@ -22,6 +21,10 @@
     <Spacer />
     <div class="testimony-section-container">
         <HomeTestimonial />
+    </div>
+    <Spacer />
+    <div class="base-section-container">
+        <HomeContact />
     </div>
     <Spacer />
 </template>

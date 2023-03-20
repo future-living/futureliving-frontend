@@ -63,7 +63,7 @@ const testimonial = [
 ];
 </script>
 <template>
-    <div class="navigation-wrapper flex flex-col py-16 lg:py-0 gap-6">
+    <div class="navigation-wrapper flex flex-col py-16 lg:py-0 gap-6 md:gap-10">
         <div
             class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
             Testimoni

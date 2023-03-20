@@ -20,6 +20,8 @@ module.exports = {
         icon: "#71517B",
         bodyText: "#3D4350",
         card: "#E2C5EB",
+        medsos: "#292D35",
+        inputForm: "#C2C6CE",
       },
     },
   },
