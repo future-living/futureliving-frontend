@@ -47,9 +47,12 @@ const article = [
 </script>
 <template>
     <div class="navigation-wrapper flex flex-col gap-10 justify-center">
-        <div
-            class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
-            Artikel
+        <div class="flex flex-col justify-center lg:flex-row lg:justify-between lg:items-center">
+            <div
+                class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
+                Artikel
+            </div>
+            <ButtonPrimary class="hidden lg:block" title="Selengkapnya" />
         </div>
         <div class="flex flex-col gap-8">
             <div class="relative flex flex-col">
@@ -91,7 +94,7 @@ const article = [
                                 <img :src="post.imgPost" alt="" class="object-cover rounded w-full h-full">
                             </div>
                             <div class="flex flex-col gap-2 md:gap-3 w-full">
-                                <div class="flex flex-row items-center gap-1">
+                                <div class="flex flex-row items-center gap-1 md:gap-2">
                                     <img class="object-cover rounded-full w-[18px] h-[18px] md:w-[32px] md:h-[32px]"
                                         :src="post.imgProfile" alt="">
                                     <div class="font-montserrat font-medium text-[10px] md:text-[20px] text-bodyText">
@@ -121,5 +124,6 @@ const article = [
                 </template>
             </div>
         </div>
+        <ButtonPrimary class="lg:hidden text-center w-fit mx-auto" title="Selengkapnya" />
     </div>
 </template>

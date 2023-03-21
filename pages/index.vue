@@ -23,7 +23,7 @@
         <HomeTestimonial />
     </div>
     <Spacer />
-    <div class="base-section-container">
+    <div class="base-section-container pb-10">
         <HomeContact />
     </div>
     <Spacer />

@@ -4,6 +4,7 @@ import { useKeenSlider } from 'keen-slider/vue' // import from 'keen-slider/vue.
 const current = ref(1)
 
 const [container, slider] = useKeenSlider({
+    loop: true,
     initial: current.value,
     slideChanged: (s) => {
         current.value = s.track.details.rel
