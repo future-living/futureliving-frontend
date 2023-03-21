@@ -27,4 +27,8 @@
         <HomeContact />
     </div>
     <Spacer />
+    <div class="base-section-container">
+        <HomeArticle />
+    </div>
+    <Spacer />
 </template>
