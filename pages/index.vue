@@ -31,4 +31,8 @@
         <HomeArticle />
     </div>
     <Spacer />
+    <div class="base-section-container">
+        <HomeMap />
+    </div>
+    <Spacer />
 </template>

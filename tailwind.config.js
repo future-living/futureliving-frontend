@@ -22,6 +22,7 @@ module.exports = {
         card: "#E2C5EB",
         medsos: "#292D35",
         inputForm: "#C2C6CE",
+        key: "#525A6A",
       },
     },
   },
