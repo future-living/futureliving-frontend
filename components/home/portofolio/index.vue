@@ -58,7 +58,7 @@ const properties = [
 </script>
 
 <template>
-    <div class="navigation-wrapper flex flex-col gap-6 md:gap-10 justify-center">
+    <div class="navigation-wrapper flex flex-col gap-10 justify-center">
         <div
             class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
             Proyek
@@ -77,9 +77,9 @@ const properties = [
                 </svg>
             </div>
             <!-- <div v-for="properti in properties" :key="properti.id">
-                                                                                    <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
-                                                                                    <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
-                                                                                </div> -->
+                                                                                        <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
+                                                                                        <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
+                                                                                    </div> -->
 
             <div v-if="slider" class="dots">
                 <button v-for="(_slide, idx) in dotHelper" @click="slider.moveToIdx(idx)"
