@@ -17,7 +17,7 @@
     </div>
     <Spacer />
     <div class="base-section-container">
-        <DetailMap />
+        <HomeMap />
     </div>
     <Spacer />
 </template>
