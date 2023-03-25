@@ -49,7 +49,7 @@
                 Semua yang Anda butuhkan tentang hunian impian ada di sini. Future Living menyediakan hunian terbaik untuk
                 Anda dan keluarga. Pengalaman kami membawa Anda pada kepuasan. </div>
             <div class="flex flex-row gap-2 md:gap-4">
-                <ButtonPrimary title="Hubungi Kami" link="#" />
+                <ButtonPrimary title="Buat Janji" link="#" />
                 <ButtonSecondary title="Jelajahi Properti" link="#" />
             </div>
             <!-- <div class="w-full flex flex-row gap-2 lg:max-w-[568px]">

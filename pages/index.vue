@@ -20,9 +20,14 @@ useHead({
 })
 
 const tour = ref(false)
+const videoTour = ref(false)
 
 const toogleTour = () => {
     tour.value = !tour.value
+}
+
+const toogleVideoTour = () => {
+    videoTour.value = !videoTour.value
 }
 
 
@@ -38,7 +43,7 @@ const toogleTour = () => {
     </div>
     <Spacer />
     <div class="base-section-container">
-        <HomeProperty @handle-tour3d="toogleTour" />
+        <HomeProperty @handle-tour3d="toogleTour" @handle-video-tour="toogleVideoTour" />
     </div>
     <Spacer />
     <div class="base-section-container">
@@ -66,4 +71,5 @@ const toogleTour = () => {
     </div>
     <Spacer />
     <Tour3dasset @handle-tour3d="toogleTour" class="fixed top-0 z-50" v-if="tour == true" />
+    <Videotour @handle-video-tour="toogleVideoTour" class="fixed top-0 z-50" v-if="videoTour == true" />
 </template>
