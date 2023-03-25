@@ -23,6 +23,7 @@ module.exports = {
         medsos: "#292D35",
         inputForm: "#C2C6CE",
         key: "#525A6A",
+        chips:"#371B40"
       },
     },
   },
