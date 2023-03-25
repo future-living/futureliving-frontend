@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full flex-col gap-10 lg:w-fit lg:flex-row lg:justify-between lg:gap-5">
-    <div class=" relative flex flex-row gap-3 py-[68px] md:gap-6 md:px-[52px] w-full lg:w-fit lg:px-0 px-7">
+    <div class=" relative flex flex-row gap-3 md:gap-6 md:px-[52px] w-full lg:w-fit lg:px-0 px-7">
       <div class="flex w-full flex-col gap-3 md:gap-6">
         <div class="relative w-full">
           <img
@@ -60,6 +60,9 @@
       <div class="absolute top-1/2 left-[40%] -top-[30px] flex w-fit flex-row items-center rounded-lg bg-white p-2 shadow lg:p-4">
         <div>
           <img src="~/assets/img/logo/gift.svg" alt="" class="h-[18px] md:h-[40px]" />
+				</div>
+				<div class="font-montserrat text-[10px] font-bold text-title md:text-base">
+					Loyal
 				</div>
 			</div>
 		</div>
