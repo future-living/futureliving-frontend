@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full flex-col gap-10 lg:w-fit lg:flex-row lg:justify-between lg:gap-5">
-    <div class=" relative flex flex-row gap-3 py-[68px] md:gap-6 md:px-[52px] w-full lg:w-fit lg:px-0 px-7">
+    <div class=" relative flex flex-row gap-3 md:gap-6 md:px-[52px] w-full lg:w-fit lg:px-0 px-7">
       <div class="flex w-full flex-col gap-3 md:gap-6">
         <div class="relative w-full">
           <img
