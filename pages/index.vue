@@ -19,6 +19,13 @@ useHead({
     ],
 })
 
+const tour = ref(false)
+
+const toogleTour = () => {
+    tour.value = !tour.value
+}
+
+
 </script>
 
 <template>
@@ -31,7 +38,7 @@ useHead({
     </div>
     <Spacer />
     <div class="base-section-container">
-        <HomeProperty />
+        <HomeProperty @handle-tour3d="toogleTour" />
     </div>
     <Spacer />
     <div class="base-section-container">
@@ -58,4 +65,5 @@ useHead({
         <HomeMap />
     </div>
     <Spacer />
+    <Tour3dasset @handle-tour3d="toogleTour" class="fixed top-0 z-50" v-if="tour == true" />
 </template>
