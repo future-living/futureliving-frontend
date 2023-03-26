@@ -1,17 +1,25 @@
+<script setup>
+const sent = ref(false)
+
+
+const thanks = () => {
+    sent.value = !sent.value
+}
+</script>
+
 <template>
     <div>
-        <div class="navigation-wrapper flex flex-col gap-10 justify-center">
-            <div class="flex flex-col  gap-1">
+        <div class="navigation-wrapper flex flex-col gap-[56px] justify-center">
+            <div class="flex flex-col gap-1">
                 <div
                     class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
-                    Hubungi Kami
+                    Dapatkan Informasi Lebih
                 </div>
                 <div
                     class="font-montserrat font-medium text-base md:text-[20px] text-icon text-center leading-[20px] md:leading-[20px]">
-                    Lebih dekat dengan kami dan temukan solusinya
-                </div>
+                    Lebih dekat dengan kami dan temukan solusinya </div>
             </div>
-            <div class="flex flex-col xl:flex-row gap-[70px] md:gap-[112px] xl:gap-[220px] xl:mx-auto">
+            <div class="flex flex-col items-center xl:flex-row gap-[70px] md:gap-[112px] xl:mx-auto">
                 <div class="relative w-fit mx-auto">
                     <img class="object-cover rounded h-[268px] md:h-[613px]" src="/contact.png" alt="">
                     <img class="absolute -top-[10px] md:-top-[25px] -right-[62px] md:-right-[141px] object-cover rounded h-[290px] md:h-[665px]"
@@ -43,12 +51,19 @@
 
                     </HomeContactCard>
                 </div>
-                <div class="flex flex-col gap-5 md:gap-7">
-                    <div
-                        class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] lg:text-[36px] text-title text-center leading-[30px] md:leading-[54px]">
-                        Kami Siap Membantu
+                <div v-if="sent == false"
+                    class="flex flex-col gap-5 md:gap-7 bg-white py-[20px] px-[30px] rounded-[8px] shadow-md ml-0 xl:ml-[100px]">
+                    <div class="flex flex-col gap-1">
+                        <div
+                            class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] lg:text-[36px] text-title text-center leading-[30px] md:leading-[54px]">
+                            Buat Janji sekarang!
+                        </div>
+                        <div
+                            class="font-montserrat font-medium text-base md:text-[20px] text-icon text-center lg:text-left leading-[20px] md:leading-[20px]">
+                            Kami akan membantu Anda
+                        </div>
                     </div>
-                    <form class="flex flex-col gap-4">
+                    <form class="flex flex-col gap-4" @submit="thanks">
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
                                 class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
@@ -61,23 +76,44 @@
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
                                 class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
-                                No Telephon
+                                Email
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
-                                type="text" placeholder="Masukan No Telepon Anda disini">
+                                type="email" placeholder="Masukan No Telepon Anda disini">
                         </div>
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
                                 class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
-                                Pesan
+                                Tanggal
                             </div>
-                            <textarea required
-                                class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg h-[112px] md:h-[160px]"
-                                type="text" placeholder="Masukan Pesan Anda disini"></textarea>
+                            <input required
+                                class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
+                                type="date" placeholder="Masukan No Telepon Anda disini">
                         </div>
-                        <ButtonSubmit class="w-full text-center mt-[12px] md:mt-[24px]" title="Kirim" />
+                        <div class="flex flex-col gap-1 md:gap-2">
+                            <div
+                                class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
+                                Waktu
+                            </div>
+                            <input required
+                                class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
+                                type="time" placeholder="Masukan No Telepon Anda disini">
+                        </div>
+                        <ButtonSubmit type class="w-full text-center mt-[12px] md:mt-[24px]" title="Buat Janji" />
                     </form>
+
+                </div>
+                <div v-if="sent == true" class="flex flex-col gap-[12px] md:gap-[20px] max-w-[548px]">
+                    <div
+                        class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] lg:text-[36px] text-title text-center leading-[30px] md:leading-[43px]">
+                        Terima kasih telah menghubungi kami
+                    </div>
+                    <div class="font-montserrat font-medium text-base md:text-[18px] text-icon text-center">
+                        Cek notifikasi e-mail<br>Link verifikasi buat janji telah dikirimkan ke e-mail anda
+                    </div>
+                    <ButtonPrimary type class="w-full text-center mt-[12px] md:mt-[24px]" title="Kembali ke Beranda"
+                        link="#" />
                 </div>
             </div>
         </div>
