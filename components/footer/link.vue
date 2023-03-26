@@ -6,9 +6,9 @@ defineProps({
 </script>
 
 <template>
-    <a :href="link">
+    <NuxtLink :to="link">
         <div class="font-montserrat font-medium text-base text-white">
             {{ title }}
         </div>
-    </a>
+    </NuxtLink>
 </template>

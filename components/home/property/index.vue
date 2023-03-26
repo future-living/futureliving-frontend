@@ -26,10 +26,14 @@ const properties = [
     },
 ];
 
-const emit = defineEmits(['handleTour3d'])
+const emit = defineEmits(['handleTour3d', 'handleVideoTour'])
 
 const showTour = () => {
     emit('handleTour3d')
+}
+
+const showVideoTour = () => {
+    emit('handleVideoTour')
 }
 
 const geser = ref(0)
@@ -70,7 +74,7 @@ const listItem = (id) => {
                     <img :src="`${properti.img}`" alt=""
                         class="object-cover rounded w-full h-[208px] md:h-[524px] lg:max-h-[452px]">
                     <div class="absolute flex flex-row justify-center gap-2 w-full -bottom-[16px] md:-bottom-[28px] z-10">
-                        <HomePropertyImagebutton title="Play Video">
+                        <HomePropertyImagebutton @click="showVideoTour" title="Play Video">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6 stroke-title">
@@ -137,8 +141,8 @@ const listItem = (id) => {
                         </div>
                     </div>
                     <div class="flex flex-row gap-2 justify-center lg:justify-start md:gap-4">
-                        <ButtonPrimary title="Buat Janji" link="#" />
-                        <ButtonSecondary title="Selengkapnya" link="#" />
+                        <ButtonPrimary title="Buat Janji" link="/booking" />
+                        <ButtonSecondary title="Selengkapnya" link="/detail" />
                     </div>
                 </div>
             </div>
