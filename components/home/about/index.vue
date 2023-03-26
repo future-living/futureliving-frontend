@@ -47,8 +47,8 @@
                 fungsional, nyaman, dan bergaya dengan menggunakan bahan berkualitas tinggi dan teknologi canggih.
                 Transparansi dan kejujuran adalah nilai-nilai Future Living.</div>
             <div class="flex flex-row gap-2 justify-center lg:justify-start md:gap-4">
-                <ButtonPrimary title="Selengkapnya" link="#" />
-                <ButtonSecondary title="Hubungin Kami" link="#" />
+                <ButtonPrimary title="Selengkapnya" link="/about" />
+                <ButtonSecondary title="Hubungin Kami" link="/#kontak" />
             </div>
         </div>
     </div>
