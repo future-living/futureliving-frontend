@@ -31,10 +31,10 @@
             </div>
         </div>
         <div class="grid grid-cols-2 md:h-fit lg:grid-cols-1 gap-6 lg:gap-4 lg:order-2 lg:w-fit lg:mx-auto">
-            <FooterLink title="Beranda" link="#" />
-            <FooterLink title="Tentang Kami" link="#" />
-            <FooterLink title="Properti" link="#" />
-            <FooterLink title="Artikel" link="#" />
+            <FooterLink title="Beranda" link="/" />
+            <FooterLink title="Tentang Kami" link="/about" />
+            <FooterLink title="Properti" link="#property" />
+            <FooterLink title="Artikel" link="#artikel" />
         </div>
         <div class="grid grid-cols-1 gap-6 lg:order-3">
             <div class="flex flex-col gap-2">

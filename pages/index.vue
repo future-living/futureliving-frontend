@@ -43,7 +43,8 @@ const toogleVideoTour = () => {
     </div>
     <Spacer />
     <div class="base-section-container">
-        <HomeProperty @handle-tour3d="toogleTour" @handle-video-tour="toogleVideoTour" />
+        <HomeProperty class="scroll-m-20 md:scroll-m-28" id="property" @handle-tour3d="toogleTour"
+            @handle-video-tour="toogleVideoTour" />
     </div>
     <Spacer />
     <div class="base-section-container">
@@ -59,11 +60,11 @@ const toogleVideoTour = () => {
     </div>
     <Spacer />
     <div class="base-section-container pb-10">
-        <HomeContact />
+        <HomeContact class="scroll-m-20 md:scroll-m-28" id="kontak" />
     </div>
     <Spacer />
     <div class="base-section-container">
-        <HomeArticle />
+        <HomeArticle class="scroll-m-20 md:scroll-m-28" id="artikel" />
     </div>
     <Spacer />
     <div class="base-section-container">
