@@ -5,6 +5,10 @@ const handleDrawer = () => {
     drawer.value = !drawer.value
 }
 
+const handleClose = () => {
+    drawer.value = false
+}
+
 </script>
 
 <template>
@@ -13,7 +17,7 @@ const handleDrawer = () => {
         <NuxtLink to="/">
             <img class="h-8" src="~/assets/img/logo.webp" alt="">
         </NuxtLink>
-        <div @click="handleDrawer" class="hidden md:flex md:flex-row md:justify-center md:items-center md:gap-6 lg:gap-10">
+        <div @click="handleClose" class="hidden md:flex md:flex-row md:justify-center md:items-center md:gap-6 lg:gap-10">
             <NavbarLink title="Beranda" link="/" />
             <NavbarLink title="Tentang Kami" link="/about" />
             <NavbarLink title="Properti" link="/#property" />
@@ -34,7 +38,7 @@ const handleDrawer = () => {
                 <NuxtLink to="/">
                     <img class="h-8" src="~/assets/img/logo.webp" alt="">
                 </NuxtLink>
-                <div @click="handleDrawer">
+                <div @click="handleClose">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />

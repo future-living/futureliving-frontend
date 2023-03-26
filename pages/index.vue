@@ -43,7 +43,7 @@ const toogleVideoTour = () => {
     </div>
     <Spacer />
     <div class="base-section-container">
-        <HomeProperty class="scroll-m-20 md:scroll-m-28" id="property" @handle-tour3d="toogleTour"
+        <HomeProperty class="scroll-m-10 md:scroll-m-28" id="property" @handle-tour3d="toogleTour"
             @handle-video-tour="toogleVideoTour" />
     </div>
     <Spacer />

@@ -141,8 +141,8 @@ const listItem = (id) => {
                         </div>
                     </div>
                     <div class="flex flex-row gap-2 justify-center lg:justify-start md:gap-4">
-                        <ButtonPrimary title="Buat Janji" link="#" />
-                        <ButtonSecondary title="Selengkapnya" link="#" />
+                        <ButtonPrimary title="Buat Janji" link="/booking" />
+                        <ButtonSecondary title="Selengkapnya" link="/detail" />
                     </div>
                 </div>
             </div>
