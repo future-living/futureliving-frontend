@@ -3,7 +3,7 @@ const article = [
     {
         id: 1,
         imgPost: "/article1.png",
-        name: "Dianne Russel",
+        name: "Chavo El Nuno",
         imgProfile: "/user2.webp",
         title: "Developer Properti Terbaik Tahun 2022",
         time: "2 Menit | 25 September 2022",
@@ -11,7 +11,7 @@ const article = [
     {
         id: 2,
         imgPost: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        name: "Dianne Russel",
+        name: "Adam Shepherd",
         imgProfile: "/user3.webp",
         title: "Hal Yang harus Diperhatikan Ketika Membeli Sebuah Rumah",
         time: "4 Menit | 13 Oktober 2022",
@@ -19,7 +19,7 @@ const article = [
     {
         id: 3,
         imgPost: "https://images.unsplash.com/photo-1531077386034-d12285794b5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        name: "Dianne Russel",
+        name: "Dann Carney",
         imgProfile: "/user4.webp",
         title: "7 Cara Agar Terhindar Dari Penipuan Bisnis Properti",
         time: "3 Menit | 25 Agustus 2022",
@@ -27,18 +27,18 @@ const article = [
     {
         id: 4,
         imgPost: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-        name: "Dianne Russel",
+        name: "Danny McHoney",
         imgProfile: "/user1.webp",
         title: "Cara Terbaik Mengetahui Kualitas Rumah Yang Ingin Kita Beli",
         time: "5 Menit | 25 Juni 2022",
     },
     {
         id: 5,
-        imgPost: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-        name: "Dianne Russel",
-        imgProfile: "/user1.webp",
-        title: "Cara Terbaik Mengetahui Kualitas Rumah Yang Ingin Kita Beli",
-        time: "5 Menit | 25 Juni 2022",
+        imgPost: "/article5.png",
+        name: "Damian Armein",
+        imgProfile: "/user5.png",
+        title: "Hunian impian bukan cuma mimpi, wujudkan sekarang!",
+        time: "3 Menit | 2 Juli 2022",
     },
 
 

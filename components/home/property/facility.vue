@@ -4,7 +4,7 @@ defineProps({
 })
 </script>
 <template>
-    <div class="flex flex-row gap-1 md:gap-4 items-center w-fit ">
+    <div class="flex flex-row gap-1 md:gap-4 items-center w-fit lg:w-[179px] ">
         <div class="w-4 md:w-6">
             <slot />
         </div>

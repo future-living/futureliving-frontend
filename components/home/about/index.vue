@@ -6,16 +6,16 @@
                     <img class="object-cover w-full h-[165px] md:h-[280px] rounded-lg saturate-150"
                         src="https://images.unsplash.com/photo-1564703048291-bcf7f001d83d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
                         alt="house-1">
-                    <HomeAboutFeaturebar class="absolute -top-[30px] left-0 md:-top-[40px] md:-left-[52px]" title="44K"
-                        description="Properti Dibangun" />
+                    <HomeAboutFeaturebar class="absolute -top-[30px] left-0 md:-top-[40px] md:-left-[52px] lg:-left-[10px]"
+                        title="44K" description="Properti Dibangun" />
                 </div>
                 <div class="relative w-full">
                     <img class="object-cover w-full h-[99px] md:h-[169px] rounded-lg contrast-125 saturate-150"
                         src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                         alt="house-1">
                     <HomeAboutFeaturebar
-                        class="absolute -bottom-[30px] left-0 md:bottom-auto md:-top-[40px] md:-left-[52px]" title="30K+"
-                        description="Customer Bahagia" />
+                        class="absolute -bottom-[30px] left-0 md:bottom-auto md:-top-[40px] md:-left-[52px] lg:left-[20px] lg:-top-[50px]"
+                        title="30K+" description="Customer Berbahagia" />
                 </div>
             </div>
             <div class="flex flex-col gap-3 md:gap-6 w-full">

@@ -41,7 +41,7 @@
                 <div class="font-montserrat font-medium text-base text-white ">
                     Alamat </div>
                 <div class="font-montserrat font-light  text-sm text-link leading-6">
-                    Future Living Head Office Jl. Saboga No. 12 Bandung, Jawa Barat
+                    Future Living Head Office<br /> Jl. Saboga No. 12 Bandung, Jawa Barat
                 </div>
             </div>
             <div class="flex flex-col gap-2">

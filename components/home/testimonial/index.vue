@@ -35,7 +35,7 @@ const testimonial = [
             "Demi mencapai mimpi yang dituju, perlu langkah awal yang pasti. Future Living memiliki segalanya sebagai langkah awal mewujudkan mimpi.",
         imgProperti: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         imgCompany: "/company1.png",
-        imgProfile: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        imgProfile: "/user1.webp",
     },
     {
         id: 2,
@@ -47,7 +47,7 @@ const testimonial = [
             "Ini adalah pelayanan kami, kami melayani dengan sepenuh hati. Anda akan mendapatkan pelayanan terbaik dari kami.",
         imgProperti: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=875&q=80",
         imgCompany: "/company2.png",
-        imgProfile: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        imgProfile: "/user4.webp",
     },
     {
         id: 3,
@@ -59,7 +59,7 @@ const testimonial = [
             "Masa depan bukan hanya sekedar angan-angan, Future Living menyediakan properti dengan teknologi terkini dan selalu ada gebrakan di dalamnya.",
         imgProperti: "/aki-home-testimonial.png",
         imgCompany: "/company3.png",
-        imgProfile: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        imgProfile: "/user3.webp",
     },
 ];
 </script>
