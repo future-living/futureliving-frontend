@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col lg:flex-row-reverse lg:justify-between gap-10 lg:gap-5">
         <div class="relative w-full lg:w-fit">
-            <img class="object-cover rounded w-full md:h-[524px] lg:h-[640px] lg:w-[622px]"
+            <img class="object-cover rounded md:rounded-lg w-full md:h-[524px] lg:h-[640px] lg:w-[622px]"
                 src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=692&q=80"
                 alt="">
             <div class="absolute hidden -bottom-16 -left-8 xl:flex xl:flex-col gap-6">

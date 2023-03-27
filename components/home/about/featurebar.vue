@@ -11,7 +11,7 @@ defineProps({
             {{ title }}
         </div>
         <div
-            class="font-montserrat font-light md:font-medium  text-xs md:text-base text-[#525A6A] leading-[24px] md:leading-[20px] ">
+            class="font-montserrat font-light md:font-medium lg:font-bold  text-xs md:text-base text-[#525A6A] leading-[24px] md:leading-[20px] ">
             {{ description }}
         </div>
     </div>

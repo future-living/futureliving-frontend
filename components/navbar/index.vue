@@ -13,7 +13,7 @@ const handleClose = () => {
 
 <template>
     <div v-if="drawer == false"
-        class="sticky top-0 left-0 base-section-container flex flex-row justify-between items-center py-4 lg:mt-6 w-full bg-white bg-opacity-[0.85] z-50">
+        class="sticky top-0 left-0 base-section-container flex flex-row justify-between items-center py-4 lg:mt-6 w-full bg-white bg-opacity-[0.85] backdrop-blur-sm z-50">
         <NuxtLink to="/">
             <img class="h-8" src="~/assets/img/logo.webp" alt="">
         </NuxtLink>

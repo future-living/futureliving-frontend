@@ -41,7 +41,7 @@ const properties = [
     },
     {
         id: 2,
-        nama: "Perumahan MoonShine",
+        nama: "Perumahan RoseShine",
         kota: "Surabaya",
         img: "https://images.unsplash.com/photo-1561975023-4cf2c838810c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
@@ -77,9 +77,9 @@ const properties = [
                 </svg>
             </div>
             <!-- <div v-for="properti in properties" :key="properti.id">
-                                                                                        <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
-                                                                                        <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
-                                                                                    </div> -->
+                                                                                            <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
+                                                                                            <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
+                                                                                        </div> -->
 
             <div v-if="slider" class="dots">
                 <button v-for="(_slide, idx) in dotHelper" @click="slider.moveToIdx(idx)"
