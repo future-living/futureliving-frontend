@@ -34,43 +34,45 @@ const toogleVideoTour = () => {
 </script>
 
 <template>
-    <div class="base-section-container pt-4 md:pt-8 lg:pt-16">
-        <HomeHero />
+    <div class="max-w-[1440px] mx-auto">
+        <div class="base-section-container pt-4 md:pt-8 lg:pt-16">
+            <HomeHero />
+        </div>
+        <Spacer />
+        <div class="base-section-container">
+            <HomeAbout />
+        </div>
+        <Spacer />
+        <div class="base-section-container">
+            <HomeProperty class="scroll-m-10 md:scroll-m-28" id="property" @handle-tour3d="toogleTour"
+                @handle-video-tour="toogleVideoTour" />
+        </div>
+        <Spacer />
+        <div class="base-section-container">
+            <HomeService />
+        </div>
+        <Spacer />
+        <div class="project-section-container">
+            <HomePortofolio />
+        </div>
+        <Spacer />
+        <div class="testimony-section-container">
+            <HomeTestimonial />
+        </div>
+        <Spacer />
+        <div class="base-section-container pb-10">
+            <HomeContact class="scroll-m-20 md:scroll-m-28" id="kontak" />
+        </div>
+        <Spacer />
+        <div class="base-section-container">
+            <HomeArticle class="scroll-m-20 md:scroll-m-28" id="artikel" />
+        </div>
+        <Spacer />
+        <div class="base-section-container">
+            <HomeMap />
+        </div>
+        <Spacer />
+        <Tour3dasset @handle-tour3d="toogleTour" class="fixed top-0 z-50" v-if="tour == true" />
+        <Videotour @handle-video-tour="toogleVideoTour" class="fixed top-0 z-50" v-if="videoTour == true" />
     </div>
-    <Spacer />
-    <div class="base-section-container">
-        <HomeAbout />
-    </div>
-    <Spacer />
-    <div class="base-section-container">
-        <HomeProperty class="scroll-m-10 md:scroll-m-28" id="property" @handle-tour3d="toogleTour"
-            @handle-video-tour="toogleVideoTour" />
-    </div>
-    <Spacer />
-    <div class="base-section-container">
-        <HomeService />
-    </div>
-    <Spacer />
-    <div class="project-section-container">
-        <HomePortofolio />
-    </div>
-    <Spacer />
-    <div class="testimony-section-container">
-        <HomeTestimonial />
-    </div>
-    <Spacer />
-    <div class="base-section-container pb-10">
-        <HomeContact class="scroll-m-20 md:scroll-m-28" id="kontak" />
-    </div>
-    <Spacer />
-    <div class="base-section-container">
-        <HomeArticle class="scroll-m-20 md:scroll-m-28" id="artikel" />
-    </div>
-    <Spacer />
-    <div class="base-section-container">
-        <HomeMap />
-    </div>
-    <Spacer />
-    <Tour3dasset @handle-tour3d="toogleTour" class="fixed top-0 z-50" v-if="tour == true" />
-    <Videotour @handle-video-tour="toogleVideoTour" class="fixed top-0 z-50" v-if="videoTour == true" />
 </template>

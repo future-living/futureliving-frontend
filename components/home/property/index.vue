@@ -70,7 +70,7 @@ const listItem = (id) => {
             class="flex flex-row lg:flex-col lg:gap-20 overflow-hidden snap-mandatory snap-x no-scrollbar lg:py-8">
             <div ref="slide" v-for="properti in properties" :key="properti.id" :class="[listItem(properti.id), posisi]"
                 class="flex flex-col lg:items-center gap-10 md:gap-[60px] min-w-full snap-always snap-center">
-                <div class="relative flex flex-col gap-7 lg:gap-10 lg:min-w-[47.5%]">
+                <div class="relative flex flex-col gap-7 lg:gap-10 lg:w-[185%]">
                     <img :src="`${properti.img}`" alt=""
                         class="object-cover rounded w-full h-[208px] md:h-[524px] lg:max-h-[452px]">
                     <div class="absolute flex flex-row justify-center gap-2 w-full -bottom-[16px] md:-bottom-[28px] z-10">
@@ -97,7 +97,7 @@ const listItem = (id) => {
                         </HomePropertyImagebutton>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 lg:gap-10">
+                <div class="flex flex-col gap-7 lg:gap-10 lg:w-[50%]">
                     <div class="flex flex-col gap-1">
                         <div
                             class="font-montserrat font-semibold md:font-bold text-2xl md:text-[36px] text-title text-center lg:text-left leading-[30px] md:leading-[44px]">
