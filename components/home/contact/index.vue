@@ -61,11 +61,20 @@
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
                                 class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
-                                No Telephon
+                                No Telepon
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
                                 type="text" placeholder="Masukan No Telepon Anda disini">
+                        </div>
+                        <div class="flex flex-col gap-1 md:gap-2">
+                            <div
+                                class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
+                                Email
+                            </div>
+                            <input required
+                                class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
+                                type="email" placeholder="Masukan Email Anda disini">
                         </div>
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div

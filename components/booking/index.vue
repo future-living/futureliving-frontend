@@ -113,7 +113,7 @@ const thanks = () => {
                         Cek notifikasi e-mail<br>Link verifikasi buat janji telah dikirimkan ke e-mail anda
                     </div>
                     <ButtonPrimary type class="w-full text-center mt-[12px] md:mt-[24px]" title="Kembali ke Beranda"
-                        link="#" />
+                        link="/" />
                 </div>
             </div>
         </div>
