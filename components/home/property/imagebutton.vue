@@ -9,7 +9,8 @@ defineProps({
         <div>
             <slot />
         </div>
-        <div class="font-montserrat font-medium text-[12px] md:text-[16px] text-title leading-[12px]">
+        <div
+            class="font-montserrat font-medium text-[12px] md:text-[16px] text-title leading-[12px] group-hover:text-white">
             {{ title }}
         </div>
     </div>
