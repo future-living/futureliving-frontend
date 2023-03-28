@@ -8,7 +8,7 @@
                         alt="house-1">
                     <HomeAboutFeaturebar
                         class="animate-pop absolute -top-[30px] left-0 md:-top-[40px] md:-left-[52px] lg:-left-[10px]"
-                        title="44K" description="Properti Dibangun" />
+                        title="30K+" description="Customer Berbahagia" />
                 </div>
                 <div class="relative w-full">
                     <img class="object-cover w-full h-[99px] md:h-[169px] rounded-lg contrast-125 saturate-150"
@@ -16,7 +16,7 @@
                         alt="house-1">
                     <HomeAboutFeaturebar
                         class="animate-pop animation-delay-2000 absolute -bottom-[30px] left-0 md:bottom-auto md:-top-[40px] md:-left-[52px] lg:left-[20px] lg:-top-[50px]"
-                        title="30K+" description="Customer Berbahagia" />
+                        title="10T" description="Tahun melayani" />
                 </div>
             </div>
             <div class="flex flex-col gap-3 md:gap-6 w-full">
@@ -34,7 +34,7 @@
                         alt="house-1">
                     <HomeAboutFeaturebar
                         class="animate-pop animation-delay-6000 absolute -bottom-[30px] right-0 md:-bottom-[40px] md:-right-[52px]"
-                        title="10T" description="Tahun Melayani" />
+                        title="44k" description="Properti dibangun" />
                 </div>
             </div>
         </div>

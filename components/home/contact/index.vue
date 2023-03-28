@@ -87,7 +87,7 @@
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg h-[112px] md:h-[160px]"
                                 type="text" placeholder="Masukan Pesan Anda disini"></textarea>
                         </div>
-                        <ButtonSubmit class="w-full text-center mt-[12px] md:mt-[24px]" title="Kirim" />
+                        <ButtonSubmitbig class="w-full text-center mt-[12px] md:mt-[24px]" title="Kirim" />
                     </form>
                 </div>
             </div>
