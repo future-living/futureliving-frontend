@@ -13,10 +13,12 @@ defineProps({
 
         </div>
         <div class="flex flex-col">
-            <div class="font-montserrat font-medium md:font-semibold text-[10px] md:text-[24px] text-medsos">
+            <div
+                class="font-montserrat font-medium md:font-semibold text-[10px] md:text-[24px] text-medsos group-hover:text-white">
                 {{ title }}
             </div>
-            <div class="font-montserrat font-semibold md:font-bold text-[8px] md:text-[16px] text-bodyText">
+            <div
+                class="font-montserrat font-semibold md:font-bold text-[8px] md:text-[16px] text-bodyText group-hover:text-white">
                 {{ content }}
             </div>
         </div>
