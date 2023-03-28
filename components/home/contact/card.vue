@@ -7,7 +7,7 @@ defineProps({
 
 <template>
     <div
-        class="flex flex-row p-2 gap-1 md:p-4 md:gap-2 items-center bg-white rounded-md md:rounded-xl shadow-[0_2px_24px_10px_rgba(26,28,70,0.05)]">
+        class="flex flex-row p-2 gap-1 md:p-4 md:gap-2 items-center bg-white rounded-md md:rounded-xl shadow-[0_2px_24px_10px_rgba(26,28,70,0.05)] transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:cursor-pointer">
         <div>
             <slot />
 
