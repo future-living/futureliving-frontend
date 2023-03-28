@@ -74,7 +74,9 @@ const listItem = (id) => {
                     <img :src="`${properti.img}`" alt=""
                         class="object-cover rounded w-full h-[208px] md:h-[524px] lg:max-h-[452px]">
                     <div class="absolute flex flex-row justify-center gap-2 w-full -bottom-[16px] md:-bottom-[28px] z-10">
-                        <HomePropertyImagebutton class="hover:cursor-pointer" @click="showVideoTour" title="Play Video">
+                        <HomePropertyImagebutton
+                            class="hover:cursor-pointer transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300"
+                            @click="showVideoTour" title="Play Video">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6 stroke-title">
@@ -86,7 +88,9 @@ const listItem = (id) => {
 
                             </div>
                         </HomePropertyImagebutton>
-                        <HomePropertyImagebutton class="hover:cursor-pointer" @click="showTour" title="360 Tour">
+                        <HomePropertyImagebutton
+                            class="hover:cursor-pointer transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300"
+                            @click="showTour" title="360 Tour">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6 stroke-title">
