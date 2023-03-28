@@ -23,7 +23,22 @@ module.exports = {
         medsos: "#292D35",
         inputForm: "#C2C6CE",
         key: "#525A6A",
-        chips:"#371B40"
+        chips: "#371B40",
+      },
+      animation: {
+        pop: "pop 2s both",
+      },
+      keyframes: {
+        pop: {
+          from: {
+            transform: "scale(0)",
+            opacity: 0,
+          },
+          to: {
+            transform: "scale(1)",
+            opacity: 1,
+          },
+        },
       },
     },
   },

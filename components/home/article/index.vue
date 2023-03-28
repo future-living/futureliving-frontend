@@ -60,7 +60,7 @@ const article = [
                     class="object-cover rounded w-full h-[203px] md:h-[381px] lg:h-[421px]">
                 <div
                     class="absolute w-full p-4 bottom-0 flex flex-col bg-gradient-to-t from-black to-transparent gap-[2px] md:gap-[6px]  rounded">
-                    <div class="flex flex-row items-center gap-1">
+                    <div class="flex flex-row items-center gap-1 md:gap-2">
                         <img class="object-cover rounded-full w-5 md:w-7" :src="article[0].imgProfile" alt="">
                         <div class="font-montserrat font-medium md:font-medium text-xs md:text-[20px] text-white">
                             {{ article[0].name }}

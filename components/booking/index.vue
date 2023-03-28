@@ -71,7 +71,7 @@ const thanks = () => {
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
-                                type="text" placeholder="Masukan nama Anda disini">
+                                type="text" placeholder="Masukan nama Anda">
                         </div>
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
@@ -80,7 +80,7 @@ const thanks = () => {
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
-                                type="email" placeholder="Masukan No Telepon Anda disini">
+                                type="email" placeholder="Masukan alamat email Anda">
                         </div>
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
@@ -89,7 +89,7 @@ const thanks = () => {
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
-                                type="date" placeholder="Masukan No Telepon Anda disini">
+                                type="date" placeholder="Pilih tanggal yang tersedia">
                         </div>
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
@@ -98,7 +98,7 @@ const thanks = () => {
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
-                                type="time" placeholder="Masukan No Telepon Anda disini">
+                                type="time" placeholder="Pilih waktu yang tersedia">
                         </div>
                         <ButtonSubmit type class="w-full text-center mt-[12px] md:mt-[24px]" title="Buat Janji" />
                     </form>
