@@ -9,6 +9,10 @@
   transition: all 0.4s;
 }
 
+.page-enter-from {
+  transform: translateY(100px);
+}
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;

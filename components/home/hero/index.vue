@@ -6,14 +6,16 @@
                 alt="">
             <div class="absolute hidden -bottom-16 -left-8 xl:flex xl:flex-col gap-6">
                 <div class="flex flex-row gap-6">
-                    <HomeHeroFeaturebar title="Terpercaya" description="Pengalaman lebih dari 10 tahun+">
+                    <HomeHeroFeaturebar class="animate-pop" title="Terpercaya"
+                        description="Pengalaman lebih dari 10 tahun+">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-11 h-11 stroke-icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </HomeHeroFeaturebar>
-                    <HomeHeroFeaturebar title="Terjangkau" description="Menyediakan harga terbaik">
+                    <HomeHeroFeaturebar class="animate-pop animation-delay-2000" title="Terjangkau"
+                        description="Menyediakan harga terbaik">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-11 h-11 stroke-icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -22,14 +24,16 @@
                     </HomeHeroFeaturebar>
                 </div>
                 <div class="flex flex-row gap-6 ml-16">
-                    <HomeHeroFeaturebar title="Professional" description="Berpengalaman dan Professional">
+                    <HomeHeroFeaturebar class="animate-pop animation-delay-4000 " title="Professional"
+                        description="Berpengalaman dan Professional">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-11 h-11 stroke-icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
                         </svg>
                     </HomeHeroFeaturebar>
-                    <HomeHeroFeaturebar title="Cepat" description="Bekerja secara efisien">
+                    <HomeHeroFeaturebar class="animate-pop animation-delay-6000 " title="Cepat"
+                        description="Bekerja secara efisien">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-11 h-11 stroke-icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
