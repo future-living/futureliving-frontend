@@ -5,6 +5,7 @@ import { useKeenSlider } from 'keen-slider/vue' // import from 'keen-slider/vue.
 const current = ref(1)
 
 const [container, slider] = useKeenSlider({
+    loop: true,
     initial: current.value,
     slideChanged: (s) => {
         current.value = s.track.details.rel
@@ -27,7 +28,34 @@ const [container, slider] = useKeenSlider({
     },
 
 }, [
-    // add plugins here
+    (slider) => {
+        let timeout
+        let mouseOver = false
+        function clearNextTimeout() {
+            clearTimeout(timeout)
+        }
+        function nextTimeout() {
+            clearTimeout(timeout)
+            if (mouseOver) return
+            timeout = setTimeout(() => {
+                slider.next()
+            }, 3000)
+        }
+        slider.on("created", () => {
+            slider.container.addEventListener("mouseover", () => {
+                mouseOver = true
+                clearNextTimeout()
+            })
+            slider.container.addEventListener("mouseout", () => {
+                mouseOver = false
+                nextTimeout()
+            })
+            nextTimeout()
+        })
+        slider.on("dragStarted", clearNextTimeout)
+        slider.on("animationEnded", nextTimeout)
+        slider.on("updated", nextTimeout)
+    },
 ])
 
 const dotHelper = computed(() => slider.value ? [...Array(slider.value.track.details.slides.length).keys()] : [])
@@ -67,7 +95,7 @@ const properties = [
             <HomePortofolioCard v-for="properti in properties" :key="properti.id" :nama="properti.nama"
                 :kota="properti.kota" :image="properti.img" :class="`keen-slider__slide number-slide${properti.id}`" />
         </div>
-        <div class="flex flex-row gap-4 justify-center items-center">
+        <div class="flex flex-row gap-4 justify-center items-center lg:hidden">
             <div class="w-5 h-5">
                 <svg v-if="current !== 0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                     class="w-5 h-5 stroke-[#AD9BB3] fill-[#AD9BB3]" @click="slider.prev()">
@@ -77,9 +105,9 @@ const properties = [
                 </svg>
             </div>
             <!-- <div v-for="properti in properties" :key="properti.id">
-                                                                                            <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
-                                                                                            <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
-                                                                                        </div> -->
+                                                                                                        <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
+                                                                                                        <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
+                                                                                                    </div> -->
 
             <div v-if="slider" class="dots">
                 <button v-for="(_slide, idx) in dotHelper" @click="slider.moveToIdx(idx)"
