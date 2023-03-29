@@ -52,7 +52,12 @@ const article = [
                 class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px]">
                 Artikel
             </div>
-            <ButtonPrimary class="hidden lg:block" title="Selengkapnya" />
+            <ButtonPrimaryicon class="hidden  lg:flex lg:flex-row lg:gap-[10px] lg:items-center " title="Selengkapnya">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 stroke-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </ButtonPrimaryicon>
         </div>
         <div class="flex flex-col gap-8">
             <div class="relative flex flex-col">
@@ -124,6 +129,11 @@ const article = [
                 </template>
             </div>
         </div>
-        <ButtonPrimary class="lg:hidden text-center w-fit mx-auto" title="Selengkapnya" />
+        <ButtonPrimaryicon class="lg:hidden flex flex-row gap-[10px] items-center mx-auto" title="Selengkapnya">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+        </ButtonPrimaryicon>
     </div>
 </template>
