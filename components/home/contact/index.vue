@@ -1,3 +1,12 @@
+<script setup>
+const emit = defineEmits(['handleMessageSent'])
+const formfield = ref(null)
+
+const sendMessage = () => {
+    formfield.value.reset()
+    emit('handleMessageSent')
+}
+</script>
 <template>
     <div>
         <div class="navigation-wrapper flex flex-col gap-10 justify-center">
@@ -50,7 +59,7 @@
                         class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] lg:text-[36px] text-title text-center leading-[30px] md:leading-[54px]">
                         Kami Siap Membantu
                     </div>
-                    <form class="flex flex-col gap-4">
+                    <form ref="formfield" class="flex flex-col gap-4" @submit.prevent="sendMessage">
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div
                                 class="font-montserrat font-regular text-[12px] md:text-[18px] text-bodyText  leading-[24px] md:leading-[30px] align-middle">
@@ -67,7 +76,8 @@
                             </div>
                             <input required
                                 class="font-montserrat font-regular text-[10px] md:text-[16px] text-bodyText leading-[24px] md:leading-[26px] align-middle placeholder:text-bodyText focus:outline-none px-4 py-2 md:py-4 border-2 border-inputForm rounded md:rounded-lg"
-                                type="text" placeholder="Masukan No Telepon Anda disini">
+                                type="tel" placeholder="Masukan No Telepon Anda disini : 62-XXXXXXXXXXX"
+                                pattern="62-[0-9]{11}">
                         </div>
                         <div class="flex flex-col gap-1 md:gap-2">
                             <div

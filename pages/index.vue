@@ -21,6 +21,7 @@ useHead({
 
 const tour = ref(false)
 const videoTour = ref(false)
+const messageSent = ref(false)
 
 const toogleTour = () => {
     tour.value = !tour.value
@@ -28,6 +29,10 @@ const toogleTour = () => {
 
 const toogleVideoTour = () => {
     videoTour.value = !videoTour.value
+}
+
+const toogleMessageSent = () => {
+    messageSent.value = !messageSent.value
 }
 
 
@@ -60,7 +65,7 @@ const toogleVideoTour = () => {
     </div>
     <Spacer />
     <div class="base-section-container pb-10">
-        <HomeContact class="scroll-m-20 md:scroll-m-28" id="kontak" />
+        <HomeContact @handle-message-sent="toogleMessageSent" class="scroll-m-20 md:scroll-m-28" id="kontak" />
     </div>
     <Spacer />
     <div class="base-section-container">
@@ -73,4 +78,5 @@ const toogleVideoTour = () => {
     <Spacer />
     <Tour3dasset @handle-tour3d="toogleTour" class="fixed top-0 z-50" v-if="tour == true" />
     <Videotour @handle-video-tour="toogleVideoTour" class="fixed top-0 z-50" v-if="videoTour == true" />
+    <Messagesent @handle-message-sent="toogleMessageSent" class="fixed top-0 z-50" v-if="messageSent == true" />
 </template>
