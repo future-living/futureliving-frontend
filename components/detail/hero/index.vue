@@ -135,7 +135,7 @@ const detail = [
             </div>
             <div class="font-montserrat font-bold text-title text-base  mt-8">Deskripsi</div>
             <div class="font-montserrat font-normal text-[#3D4350] text-base text-center lg:text-left">Type Lavenia adalah tipe rumah yang cocok untuk Anda yang mencari tipe rumah minimalis dengan gaya modern. Sangat cocok untuk Anda yang selalu ingin dekat dengan keluarga kecil Anda. </div>
-            <ButtonPrimary title='Buat Janji' class="mt-10 w-full"/>
+            <ButtonPrimary title='Buat Janji' class="mt-10 w-full" link="/#kontak"/>
         </div>
     </div>
 </template>

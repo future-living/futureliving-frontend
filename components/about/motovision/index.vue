@@ -53,7 +53,7 @@ export default {
             <img :src="item.logo" alt="" />
           </div>
           <div
-            class="font-montserrat font-bold text-base text-title"
+            class="font-montserrat font-bold text-base text-title ml-[6px]"
           >
             {{ item.title }}
           </div>
