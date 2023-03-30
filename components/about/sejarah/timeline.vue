@@ -7,7 +7,7 @@ defineProps({
     <div class="relative flex flex-col gap-28">
       <div class="flex items-center border-solid border-black" v-for="(item, index) in items">
         <div class="w-full pr-14">
-          <div class="rounded-lg bg-white p-6 shadow">
+          <div class="rounded-lg bg-white p-6 shadow hover:shadow-inner">
             <div class="flex w-fit flex-row items-center  ">
               <div class="font-montserrat text-xl font-bold text-title rounded-lg  p-4 shadow">
                 {{ item.year }}
