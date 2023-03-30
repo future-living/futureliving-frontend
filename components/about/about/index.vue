@@ -76,7 +76,7 @@
         menggunakan bahan berkualitas tinggi dan teknologi canggih. Transparansi
         dan kejujuran adalah nilai-nilai Future Living.
       </div>
-      <ButtonPrimary title="Hubungi Kami" class="md:px-8" />
+      <ButtonPrimary title="Hubungi Kami" class="md:px-8" link="/#kontak"/>
     </div>
   </div>
 </template>

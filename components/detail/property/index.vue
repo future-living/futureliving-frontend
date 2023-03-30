@@ -1,3 +1,11 @@
+<script setup>
+const emit = defineEmits(['handleLightbox'])
+
+const showLightbox = () => {
+    emit('handleLightbox')
+}
+
+</script>
 <template>
     <div class="flex w-full flex-col gap-6 lg:w-fit lg:flex-row lg:justify-between lg:gap-16 py-[70px]">
 
@@ -18,7 +26,9 @@
                 class="text-center font-montserrat text-2xl font-bold text-title md:text-[44px] md:leading-[54px] lg:max-w-[568px] lg:text-left lg:leading-[73px]">
                 Denah Rumah
             </div>
-            <img src="~/assets/img/denah.png" alt="" class="w-full" />
+            <div @click="showLightbox" class="group hover:cursor-pointer">
+                <img src="~/assets/img/denah.png" alt="" class="w-full" />
+            </div>
         </div>
     </div>
 </template>
