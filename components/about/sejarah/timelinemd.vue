@@ -4,9 +4,9 @@ defineProps({
 })
 </script>
 <template>
-    <div class="flex flex-col">
-      <div class="flex items-center border-solid border-black" v-for="(item, index) in items">
-        <div class="w-1/2 pr-4" v-if="index % 2 === 0">
+    <div class="relative flex flex-col gap-28">
+      <div class="grid grid-cols-2 gap-[70px] items-center border-solid border-black" v-for="(item, index) in items">
+        <div class="" v-if="index % 2 === 0">
           <div class="rounded-lg bg-white p-6 shadow">
             <div class="flex w-fit flex-row items-center  ">
               <div class="font-montserrat text-xl font-bold text-title rounded-lg  p-4 shadow">
@@ -21,16 +21,16 @@ defineProps({
             </div>
           </div>
         </div>
-        <div class="w-1/2" v-if="index % 2 !== 0"></div>
+        <div class="" v-if="index % 2 !== 0"></div>
 
-        <div class="flex flex-col items-center justify-center">
-          <div class="h-24 w-1  border-r-4" :class="{ 'border-title': index !== 0, 'border-transparent': index === 0 }"></div>
-          <div class="h-5 w-5 rounded-full bg-title"></div>
-          <div class="h-24 w-1  border-r-4" :class="{ 'border-title': index !== Object.keys(items).length-1, 'border-transparent': index === Object.keys(items).length-1 }"></div>
+        <div class="absolute right-1/2 left-1/2 flex flex-col items-center justify-center">
+          <div class="flex flex-grow h-60 w-1  border-r-4" :class="{ 'border-title': index !== 0, 'border-transparent': index === 0 }"></div>
+          <div class="flex h-5 w-5 rounded-full shrink-0 bg-title"></div>
+          <div class="flex flex-grow h-60 w-1  border-r-4" :class="{ 'border-title': index !== Object.keys(items).length-1, 'border-transparent': index === Object.keys(items).length-1 }"></div>
         </div>
 
-        <div class="w-1/2" v-if="index % 2 === 0"></div>
-        <div class="w-1/2 pl-4 text-left" v-if="index % 2 !== 0">
+        <div class="" v-if="index % 2 === 0"></div>
+        <div class=" text-left" v-if="index % 2 !== 0">
           <div class="rounded-lg bg-white p-6 shadow">
             <div class="flex w-fit flex-row items-center  ">
               <div class="font-montserrat text-xl font-bold text-title rounded-lg  p-4 shadow">

@@ -35,6 +35,7 @@ export default {
       Sejarah dan Pencapaian
     </div>
     
-    <AboutSejarahTimelinemd :items=items class="mt-6 md:mt-10 lg:mt-20" />
+    <AboutSejarahTimelinemd :items=items class="mt-6 md:mt-10 lg:mt-20 hidden md:flex" />
+    <AboutSejarahTimeline :items=items class="mt-6 md:mt-10 lg:mt-20 md:hidden" />
   </div>
 </template>
