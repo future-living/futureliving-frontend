@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full flex-col gap-10 lg:w-fit lg:flex-row lg:justify-between lg:gap-5">
+  <div class="flex w-full flex-col gap-10 lg:w-fit lg:flex-row lg:justify-between lg:gap-[70PX]">
     <div class=" relative flex flex-row gap-3 md:gap-6 md:px-[52px] w-full lg:w-fit lg:px-0 px-7">
       <div class="flex w-full flex-col gap-3 md:gap-6">
         <div class="relative w-full">
@@ -47,7 +47,7 @@
             src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             alt="house-1"
           />
-          <div class="absolute bottom-1/2 lg:-bottom-[10px] -right-[50px] flex w-fit flex-row items-center rounded-lg bg-white p-2 shadow lg:p-4" >
+          <div class="absolute top-[30px] lg:-top-[30px] -right-[50px] lg:-right-[30px] flex w-fit flex-row items-center rounded-lg bg-white p-2 shadow lg:p-4" >
             <div>
               <img src="~/assets/img/logo/light-bulb.svg" alt="" class="h-[18px] md:h-[40px]" />
             </div>

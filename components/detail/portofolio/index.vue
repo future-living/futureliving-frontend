@@ -5,6 +5,7 @@ import { useKeenSlider } from 'keen-slider/vue' // import from 'keen-slider/vue.
 const current = ref(1)
 
 const [container, slider] = useKeenSlider({
+    loop: true,
     initial: current.value,
     slideChanged: (s) => {
         current.value = s.track.details.rel
@@ -27,7 +28,34 @@ const [container, slider] = useKeenSlider({
     },
 
 }, [
-    // add plugins here
+(slider) => {
+        let timeout
+        let mouseOver = false
+        function clearNextTimeout() {
+            clearTimeout(timeout)
+        }
+        function nextTimeout() {
+            clearTimeout(timeout)
+            if (mouseOver) return
+            timeout = setTimeout(() => {
+                slider.next()
+            }, 3000)
+        }
+        slider.on("created", () => {
+            slider.container.addEventListener("mouseover", () => {
+                mouseOver = true
+                clearNextTimeout()
+            })
+            slider.container.addEventListener("mouseout", () => {
+                mouseOver = false
+                nextTimeout()
+            })
+            nextTimeout()
+        })
+        slider.on("dragStarted", clearNextTimeout)
+        slider.on("animationEnded", nextTimeout)
+        slider.on("updated", nextTimeout)
+    },
 ])
 
 const dotHelper = computed(() => slider.value ? [...Array(slider.value.track.details.slides.length).keys()] : [])
@@ -63,11 +91,11 @@ const properties = [
             class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px] mt-6 md:mt-[70px]">
             Pilihan Rumah
         </div>
-        <div ref="container" class="keen-slider">
+        <div ref="container" class="keen-slider  lg:pb-[70px]">
             <DetailPortofolioCard v-for="properti in properties" :key="properti.id" :nama="properti.nama"
                 :kategori="properti.kategori" :image="properti.img" :class="`keen-slider__slide number-slide${properti.id}`" />
         </div>
-        <div class="flex flex-row gap-4 justify-center items-center">
+        <div class="flex flex-row gap-4 justify-center items-center lg:hidden">
             <div class="w-5 h-5">
                 <svg v-if="current !== 0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                     class="w-5 h-5 stroke-[#AD9BB3] fill-[#AD9BB3]" @click="slider.prev()">
@@ -76,14 +104,9 @@ const properties = [
                         clip-rule="evenodd" />
                 </svg>
             </div>
-            <!-- <div v-for="properti in properties" :key="properti.id">
-                                                                                        <div v-if="geser + 1 === properti.id" class="w-2 h-2 rounded-full bg-[#AD9BB3]"></div>
-                                                                                        <div v-else class="w-2 h-2 rounded-full bg-[#EDE9EF]"></div>
-                                                                                    </div> -->
-
             <div v-if="slider" class="dots">
                 <button v-for="(_slide, idx) in dotHelper" @click="slider.moveToIdx(idx)"
-                    :class="{ dot: true, active: current === idx }" :key="idx"></button>
+                    :class="{ dot2: true, active: current === idx }" :key="idx"></button>
             </div>
             <div class="w-5 h-5">
                 <svg v-if="current < dotHelper.length - 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -110,22 +133,22 @@ const properties = [
     justify-content: center;
 }
 
-.dot {
+.dot2 {
     border: none;
     width: 8px;
     height: 8px;
-    background: #EDE9EF;
+    background: #C8BCCC;
     border-radius: 50%;
     margin: 0 8px;
     padding: 0px;
     cursor: pointer;
 }
 
-.dot:focus {
+.dot2:focus {
     outline: none;
 }
 
-.dot.active {
+.dot2.active {
     background: #AD9BB3;
 }
 </style>
