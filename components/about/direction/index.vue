@@ -5,6 +5,7 @@ import { useKeenSlider } from 'keen-slider/vue' // import from 'keen-slider/vue.
 const current = ref(1)
 
 const [container, slider] = useKeenSlider({
+    loop: true,
     initial: current.value,
     slideChanged: (s) => {
         current.value = s.track.details.rel
@@ -27,7 +28,34 @@ const [container, slider] = useKeenSlider({
     },
 
 }, [
-    // add plugins here
+    (slider) => {
+        let timeout
+        let mouseOver = false
+        function clearNextTimeout() {
+            clearTimeout(timeout)
+        }
+        function nextTimeout() {
+            clearTimeout(timeout)
+            if (mouseOver) return
+            timeout = setTimeout(() => {
+                slider.next()
+            }, 3000)
+        }
+        slider.on("created", () => {
+            slider.container.addEventListener("mouseover", () => {
+                mouseOver = true
+                clearNextTimeout()
+            })
+            slider.container.addEventListener("mouseout", () => {
+                mouseOver = false
+                nextTimeout()
+            })
+            nextTimeout()
+        })
+        slider.on("dragStarted", clearNextTimeout)
+        slider.on("animationEnded", nextTimeout)
+        slider.on("updated", nextTimeout)
+    },
 ])
 
 const dotHelper = computed(() => slider.value ? [...Array(slider.value.track.details.slides.length).keys()] : [])
@@ -63,11 +91,12 @@ const directions = [
             class="font-montserrat font-semibold md:font-bold text-2xl md:text-[44px] text-title text-center leading-[30px] md:leading-[54px] mt-[70px]">
             Jajaran Direksi
         </div>
-        <div ref="container" class="keen-slider">
+        <div ref="container" class="keen-slider lg:pb-[70px]">
             <AboutDirectionCard v-for="direction in directions" :key="direction.id" :nama="direction.nama"
-                :jabatan="direction.jabatan" :img="direction.img" :class="`keen-slider__slide number-slide${direction.id}`" />
+                :jabatan="direction.jabatan" :img="direction.img"
+                :class="`keen-slider__slide number-slide${direction.id}`" />
         </div>
-        <div class="flex flex-row gap-4 justify-center items-center">
+        <div class="flex flex-row gap-4 justify-center items-center lg:hidden">
             <div class="w-5 h-5">
                 <svg v-if="current !== 0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                     class="w-5 h-5 stroke-[#AD9BB3] fill-[#AD9BB3]" @click="slider.prev()">
@@ -78,7 +107,7 @@ const directions = [
             </div>
             <div v-if="slider" class="dots">
                 <button v-for="(_slide, idx) in dotHelper" @click="slider.moveToIdx(idx)"
-                    :class="{ dot: true, active: current === idx }" :key="idx"></button>
+                    :class="{ dot2: true, active: current === idx }" :key="idx"></button>
             </div>
             <div class="w-5 h-5">
                 <svg v-if="current < dotHelper.length - 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -105,21 +134,22 @@ const directions = [
     justify-content: center;
 }
 
-.dot {
+.dot2 {
     border: none;
     width: 8px;
     height: 8px;
-    background: #EDE9EF;
+    background: #C8BCCC;
     border-radius: 50%;
     margin: 0 8px;
     padding: 0px;
     cursor: pointer;
 }
 
-.dot:focus {
+.dot2:focus {
     outline: none;
 }
 
-.dot.active {
+.dot2.active {
     background: #AD9BB3;
-}</style>
+}
+</style>
