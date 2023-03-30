@@ -65,19 +65,19 @@ const directions = [
         id: 1,
         nama: "Lucy Golbert",
         jabatan: "Komisaris Utama",
-        img: "/_nuxt/assets/img/direksi1.png",
+        img: "/direksi1.png",
     },
     {
         id: 2,
         nama: "Gamaliel Rozenfort",
         jabatan: "Direktur Utama",
-        img: "/_nuxt/assets/img/direksi2.png",
+        img: "/direksi2.png",
     },
     {
         id: 3,
         nama: "Alexander",
         jabatan: "Komisaris",
-        img: "/_nuxt/assets/img/direksi3.png",
+        img: "/direksi3.png",
     }
 ];
 

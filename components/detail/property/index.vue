@@ -18,7 +18,7 @@
                 class="text-center font-montserrat text-2xl font-bold text-title md:text-[44px] md:leading-[54px] lg:max-w-[568px] lg:text-left lg:leading-[73px]">
                 Denah Rumah
             </div>
-            <img src="~/assets/img/denah.png" alt="" />
+            <img src="~/assets/img/denah.png" alt="" class="w-full" />
         </div>
     </div>
 </template>

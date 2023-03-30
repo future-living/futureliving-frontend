@@ -13,49 +13,49 @@ const kategori = ["Mid-Class", "Modern", "Terlaris", "Minimalis"];
 const fasilitas = [
     {
         title: "Alarm Kebakaran",
-        logo: "/_nuxt/assets/img/alarm.png",
+        logo: "/alarm.png",
     },
     {
         title: "Keamanan",
-        logo: "/_nuxt/assets/img/shield.png",
+        logo: "/shield.png",
     },
     {
         title: "Masjid",
-        logo: "/_nuxt/assets/img/mosque.png",
+        logo: "/mosque.png",
     },
     {
         title: "Taman Bermain",
-        logo: "/_nuxt/assets/img/play.png",
+        logo: "/play.png",
     },
     {
         title: "Kolam Renang",
-        logo: "/_nuxt/assets/img/pool.png",
+        logo: "/pool.png",
     },
     {
         title: "Gym",
-        logo: "/_nuxt/assets/img/barbel.png",
+        logo: "/barbel.png",
     }
 ];
 const detail = [
     {
         title: "L.T 150 M",
-        logo: "/_nuxt/assets/img/land-plots.png",
+        logo: "/land-plots.png",
     },
     {
         title: "2 Kamar Tidur",
-        logo: "/_nuxt/assets/img/bed.png",
+        logo: "/bed.png",
     },
     {
         title: "1 Dapur",
-        logo: "/_nuxt/assets/img/kitchen.png",
+        logo: "/kitchen.png",
     },
     {
         title: "1 Garasi",
-        logo: "/_nuxt/assets/img/garage.png",
+        logo: "/garage.png",
     },
     {
         title: "1 Ruang Keluarga",
-        logo: "/_nuxt/assets/img/living-room.png",
+        logo: "/living-room.png",
     }
 ];
 </script>

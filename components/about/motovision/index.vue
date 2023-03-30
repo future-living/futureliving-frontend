@@ -4,22 +4,22 @@ export default {
     return {
       items: [
         {
-          logo: "/_nuxt/assets/img/logo/light-bulb.svg",
+          logo: "/light-bulb.svg",
           title: "Inovasi",
           text: "Menjadi pengembang properti terkemuka di Asia Tenggara, dipercaya oleh pelanggan, karyawan, masyarakat, dan pemangku kepentingan lainnya.",
         },
         {
-          logo: "/_nuxt/assets/img/logo/forward.svg",
+          logo: "/forward.svg",
           title: "Komitmen",
           text: "Mengedepankan kepuasan client adalah komitmen yang akan terus dipegang oleh Future Living.",
         },
         {
-          logo: "/_nuxt/assets/img/logo/gift.svg",
+          logo: "/gift.svg",
           title: "Loyal",
           text: "Rasa loyal antar sesama kolega dipercaya dapat memberikan dampak kepada kepercayaan client.",
         },
         {
-          logo: "/_nuxt/assets/img/logo/document-check.svg",
+          logo: "/document-check.svg",
           title: "Profesional",
           text: "Melakukan pekerjaan dengan sepenuh hati untuk mencapai hasil terbaik, bertanggung jawab penuh kepada client.",
         },
