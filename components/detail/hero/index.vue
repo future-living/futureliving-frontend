@@ -60,12 +60,12 @@ const detail = [
 ];
 </script>
 <template>
-    <div class="grid grid-cols-3 gap-[61px]">
-        <div class="col-span-2">
-            <div class="grid grid-cols-3 gap-4">
+    <div class="grid lg:grid-cols-5 gap-16">
+        <div class="lg:col-span-3">
+            <div class="grid grid-cols-3 gap-6">
                 <div class="col-span-3 relative">
                     <img src="https://images.unsplash.com/photo-1591170715502-fbc32adc4f52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                        alt="" class="object-cover rounded">
+                        alt="" class="object-cover rounded lg:h-[586px]">
                     <div class="absolute flex flex-row justify-center gap-2 w-full -bottom-[16px] md:-bottom-[28px] z-10">
                         <HomePropertyImagebutton
                             class="group hover:cursor-pointer transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-title  duration-300"
@@ -97,17 +97,17 @@ const detail = [
                     </div>
                 </div>
                 <div class=""><img
-                        src="https://images.unsplash.com/photo-1591170715502-fbc32adc4f52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        src="https://images.squarespace-cdn.com/content/v1/5fbe6daad27ff856c2dfe101/1628967382988-3CBEQ505AWNY97PRP0W3/A+guide+to+single-storey+extensions.jpg?format=1000w"
                         alt="" class="object-cover rounded "></div>
                 <div class=""><img
-                        src="https://images.unsplash.com/photo-1591170715502-fbc32adc4f52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                        alt="" class="object-cover rounded "></div>
+                        src="https://c.pxhere.com/images/ca/14/e67b9cd9a1946f2a10bc429cfaf7-1632935.jpg!d"
+                        alt="" class="object-cover rounded  "></div>
                 <div class=""><img
-                        src="https://images.unsplash.com/photo-1591170715502-fbc32adc4f52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        src="https://q5q4x4m3.stackpathcdn.com/wp-content/uploads/2021/11/68f94a_b70111d49e364d22b9c76135260c1f69_mv2-1920x1280.jpg"
                         alt="" class="object-cover rounded "></div>
             </div>
         </div>
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col w-full gap-2 lg:col-span-2 items-center lg:items-start">
             <div class="font-montserrat font-bold text-title text-base">Bungalow Home I</div>
             <div class="font-montserrat font-bold text-title text-[44px] leading-10">Lavenia</div>
             <div class="flex flex-row gap-[5px] items-center">
@@ -117,27 +117,25 @@ const detail = [
                 </div>
             </div>
             <div class="font-montserrat font-bold text-title text-base">Jl. Pegangsaan Timur no. 12</div>
-            <div class="font-montserrat font-medium text-title text-xl mt-8 mb-3">Fasilitas Umum</div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="font-montserrat font-bold lg:font-medium text-title text-base lg:text-xl mt-8 mb-3">Fasilitas Umum</div>
+            <div class="grid grid-cols-3 lg:grid-cols-2 gap-3">
                 <div v-for="(item, index) in fasilitas" :key="index">
-                    <HomePropertyFacility :title=item.title>
+                    <DetailHeroFacility :title=item.title>
                         <img :src=item.logo :alt=item.title>
-                    </HomePropertyFacility>
+                    </DetailHeroFacility>
                 </div>
             </div>
-            <div class="font-montserrat font-medium text-title text-xl mt-8">Detail Rumah</div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="font-montserrat font-bold lg:font-medium text-title text-base lg:text-xl mt-8 mb-3">Detail Rumah</div>
+            <div class="grid grid-cols-3 lg:grid-cols-2 gap-3">
                 <div v-for="(item, index) in detail" :key="index">
-                    <HomePropertyFacility :title=item.title>
+                    <DetailHeroFacility :title=item.title>
                         <img :src=item.logo :alt=item.title>
-                    </HomePropertyFacility>
+                    </DetailHeroFacility>
                 </div>
             </div>
-            <div class="font-montserrat font-medium text-title text-xl mt-8">Deskripsi</div>
-            <div class="font-montserrat font-normal text-[#3D4350] text-base">Type Lavenia adalah tipe rumah yang cocok
-                untuk Anda yang mencari tipe rumah minimalis dengan gaya modern. Sangat cocok untuk Anda yang selalu ingin
-                dekat dengan keluarga kecil Anda. </div>
-
+            <div class="font-montserrat font-bold text-title text-base  mt-8">Deskripsi</div>
+            <div class="font-montserrat font-normal text-[#3D4350] text-base text-center lg:text-left">Type Lavenia adalah tipe rumah yang cocok untuk Anda yang mencari tipe rumah minimalis dengan gaya modern. Sangat cocok untuk Anda yang selalu ingin dekat dengan keluarga kecil Anda. </div>
+            <ButtonPrimary title='Buat Janji' class="mt-10 w-full"/>
         </div>
     </div>
 </template>
